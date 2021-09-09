@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const Character = ({ id, name, image }) => (
   <>
-    <p>{name}</p>
+    <Link to={`/${id}`}>{name}</Link>
     <img src={image} alt={name, id} />
   </>
 );
