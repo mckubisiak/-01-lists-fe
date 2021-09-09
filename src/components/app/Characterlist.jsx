@@ -4,7 +4,7 @@ import Character from './Character';
 
 
 const Characterlist = ({ characters }) => (
-  <ul aria-label="characters">
+  <ul aria-label="characters" name="characters" role="list">
     {characters.map((character) => (
       <li key={character.id}>
         <Character

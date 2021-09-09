@@ -15,6 +15,9 @@ export default class HeyArnoldContainer extends Component {
   }
 
   render() {
-    return <Characterlist characters={this.state.characters}/>;
+    if (this.state.loading) {
+      return <p>Loadin...!</p>;
+    }
+    return <Characterlist characters={this.state.characters} />;
   }
 }
